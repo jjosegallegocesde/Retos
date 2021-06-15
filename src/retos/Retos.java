@@ -47,7 +47,7 @@ public class Retos {
         Codifica un programa que calcule e imprima el salario mensual de un vendedor dado;*/
         
         //ENTRADAS
-        final int SALARIO_BASE=3500000;
+        /*final int SALARIO_BASE=3500000;
         final int VALOR_COMISION=1500000;
         
         Scanner entrada = new Scanner(System.in);
@@ -62,17 +62,49 @@ public class Retos {
         float salarioTotal= (float)(SALARIO_BASE+comisionDeducida);
         
         //SALIDA
-        System.out.println("Su salario es: "+salarioTotal);
+        System.out.println("Su salario es: "+salarioTotal);*/
         
         
         
         
-        
-        
-        
-        
+      
         /*Hallar la edad de Pedro, sabiendo que dentro de 11 años tendrá la mitad del cuadrado de la edad que 
         tenia hace 13 años*/
+        
+        //AX2+BX+C
+        
+       
+        
+        Scanner entrada = new Scanner(System.in);
+        
+        //ENTRADAS
+        
+        System.out.println("Digite el coeficiente A: ");
+        final int A=entrada.nextInt();
+        
+        System.out.println("Digite el coeficiente B: ");
+        final int B=entrada.nextInt();
+        
+        System.out.println("Digite el coeficiente C: ");
+        final int C=entrada.nextInt();
+        
+        
+        //PROCESO
+        double x1=((B*-1)+(Math.sqrt((Math.pow(B,2))-(4*A*C))))/(2*A);
+        double x2=((B*-1)-(Math.sqrt((Math.pow(B,2))-(4*A*C))))/(2*A);
+        
+        //SALIDAS
+        System.out.println("EL valor de x1 es: "+x1);
+        System.out.println("EL valor de x2 es: "+x2);
+        
+        
+        
+        
+        
+        
+        
+        
+        
         
         
         
