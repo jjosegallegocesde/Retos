@@ -75,7 +75,7 @@ public class Retos {
         
        
         
-        Scanner entrada = new Scanner(System.in);
+        /*Scanner entrada = new Scanner(System.in);
         
         //ENTRADAS
         
@@ -95,21 +95,18 @@ public class Retos {
         
         //SALIDAS
         System.out.println("EL valor de x1 es: "+x1);
-        System.out.println("EL valor de x2 es: "+x2);
+        System.out.println("EL valor de x2 es: "+x2);*/
         
         
         
         
         
-        
-        
-        
-        
-        
-        
-        
+     
         /*En una finca entre gallinas y conejos, se cuentan 50 cabezas y 140 patas 
         ¿Cuántas gallinas y conejos hay en la granja?*/
+        
+        //Ax+By=C
+        //Dx+Ey=F
         
         
         
@@ -117,6 +114,19 @@ public class Retos {
         
         /* Un terreno cuadrado tiene un área de N m2 ¿Cuántos metros de alambre se necesitan para cercarlo?*/
  
+        //entradas
+        Scanner entrada = new Scanner(System.in);
+        
+        System.out.println("Digite el area: ");
+        int area=entrada.nextInt();
+        
+        //PROCESO
+        double lado=Math.sqrt(area);
+        double cercado=lado*4;
+        
+        //salida
+        System.out.println("la cantidad de alambre es de: "+cercado);
+        
         
         
         
