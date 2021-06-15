@@ -24,7 +24,7 @@ public class Retos {
         
         
         //Entradas
-        Scanner entrada = new Scanner(System.in);
+        /*Scanner entrada = new Scanner(System.in);
         System.out.println("Digite la cantidad de dinero de Juan: ");
         int dineroJuan= entrada.nextInt();
         
@@ -35,19 +35,38 @@ public class Retos {
         //Salidas
         System.out.println("El dinero de juan es: "+dineroJuan);
         System.out.println("El dinero de camila es: "+dineroCamila);
-        System.out.println("El dinero de ricardo es: "+dineroRicardo);
+        System.out.println("El dinero de ricardo es: "+dineroRicardo);*/
         
         
         
         
         
-        
-        
-        
-        
+      
         /*Una compañía de software contable, paga a su personal de ventas un salario de 3500000 mensuales, 
         mas una comisión de 1500000 por cada licencia de software vendida menos el 5% de deducciones por impuestos. 
         Codifica un programa que calcule e imprima el salario mensual de un vendedor dado;*/
+        
+        //ENTRADAS
+        final int SALARIO_BASE=3500000;
+        final int VALOR_COMISION=1500000;
+        
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Digite la cantidad de ventas: ");
+        int cantidadVentas=entrada.nextInt();
+        
+        //PROCESO
+        double valorDeduccion=(cantidadVentas*VALOR_COMISION)*0.05;
+        
+        double comisionDeducida=(cantidadVentas*VALOR_COMISION)-valorDeduccion;
+        
+        float salarioTotal= (float)(SALARIO_BASE+comisionDeducida);
+        
+        //SALIDA
+        System.out.println("Su salario es: "+salarioTotal);
+        
+        
+        
+        
         
         
         
