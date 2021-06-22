@@ -254,6 +254,113 @@ public class Retos {
         
         
         
-    }
-    
+        /*Leer 8 ciudades colombianas, guardarlas en un arreglo y mostrar en orden 
+        inverso los datos ingresados*/
+        //Scanner entrada = new Scanner(System.in);
+        //String[]ciudades = new String[5];
+        
+        //LLENADO
+        /*for (int i = 0; i <ciudades.length ; i++) {
+            
+            System.out.println("Digite una ciudad colombiana: ");
+            ciudades[i]=entrada.next();
+ 
+        }
+        
+        System.out.println("...............");
+        //MOSTRAR
+        for (int i =ciudades.length; i>=0 ;i--) {
+            
+           
+            System.out.print(ciudades[i-1]+" ");
+ 
+        }*/
+        
+        
+        /*Leer 10 números enteros y guardar en 2 arreglos diferentes la información 
+        (5 datos en cada uno)*/
+        
+        /*Scanner entrada = new Scanner(System.in);
+        
+        System.out.println("Digite la cantidad de numeros a almacenar: ");
+        int cantidadNumeros=entrada.nextInt();
+        
+        int[]numeros1 = new int[cantidadNumeros/2];
+        int[]numeros2 = new int[cantidadNumeros/2];
+        
+        for (int i = 0; i < cantidadNumeros; i++) {
+            
+            System.out.print("Digite un número entero: ");
+            
+            if(i<cantidadNumeros/2){ //i<5
+                numeros1[i]=entrada.nextInt();
+            }else{
+                numeros2[i-(cantidadNumeros/2)]=entrada.nextInt();
+            }
+            
+            
+        }
+        
+        System.out.println("........");
+        
+        for (int i = 0; i <numeros1.length ; i++) {
+            System.out.print(numeros1[i]+" ");
+        }
+        
+        System.out.println(".........");
+        for (int i = 0; i <numeros2.length ; i++) {
+             System.out.print(numeros2[i]+" ");
+            
+        }*/
+        
+        
+        /*Leer 20 números enteros y guardar en un arreglo, después permitir que el usuario 
+        busque un número y si este se encuentra en el arreglo indicar con un mensaje 
+        que el resultado es exitoso*/
+        Scanner entrada = new Scanner(System.in);
+        
+        System.out.println("Digite la cantidad de numeros a almacenar: ");
+        int cantidadNumeros=entrada.nextInt();
+        int[] numeros= new int[cantidadNumeros];
+        
+        for (int i = 0; i < cantidadNumeros ;i++) {
+            
+            System.out.print("Digite el numero: "+(i+1)+" ");
+            numeros[i]=entrada.nextInt();
+            
+        }
+        
+        System.out.println("");
+        System.out.print("Digite un numero a buscar: ");
+        int numeroBuscado=entrada.nextInt();
+        
+        boolean bandera=false;
+        
+        for (int i = 0; i <numeros.length ; i++) {
+            
+            if(numeros[i]==numeroBuscado){
+                bandera=true;
+                break;
+                
+            }else{
+                bandera=false;
+                
+                
+            }
+            
+        }
+        
+        if(bandera){
+            System.out.println("el numero existe en el arreglo");
+        }else{
+            System.out.println("el numero no existe en el arreglo");
+        }
+        
+        
+        
+        /*Leer 20 números enteros y guardar en un arreglo, después permitir que el usuario 
+        busque un número y si este se encuentra en el arreglo indicar con un mensaje que el 
+        resultado es exitoso y mostrar en que posición del arreglo está el número*/
+        
+    }  
 }
